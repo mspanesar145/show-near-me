@@ -1,0 +1,16 @@
+/* Empty. Add your own CSS if you like */
+.distance-info {
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    color: #000;
+    z-index: 999;
+}

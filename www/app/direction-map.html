@@ -1,0 +1,22 @@
+<style>
+ 	#direction-map {
+      height: 100%;
+      width: 100%;
+    }
+</style>
+
+<div ng-controller="DirectionController" ng-init="plotPathToDestination()">
+<ion-view >
+	<ion-header-bar>
+		<button class="button button-dark" ng-click="goBack()">Back</button>
+		<h1 class="title">Move And Reach</h1>
+		<button ng-if="!isUserMoving" class="button button-dark" ng-click="updateLocationOnMoving()">Go</button>
+		<button ng-if="isUserMoving" class="button button-dark" ng-click="stopUpdateLocationOnMoving()">Stop</button>
+
+	</ion-header-bar>
+	<ion-content class="has-header">
+	    <div class="distance-info" style="top: 5px;">within {{searchWithIn/1000}} KM</div>
+            <div data-tap-disabled="true" id="direction-map"></div>
+        </ion-content>
+</ion-view>
+</div>

@@ -1,0 +1,27 @@
+<style>
+#map {
+    height: 100%;
+    width: 100%;
+}
+.scroll {
+    height: 100%;
+}
+span.stars, span.stars span {
+    display: block;
+    background: url(img/stars.gif) -15px -16px;
+    width: 80px;
+    height: 18px;
+    background-size: 110px 53px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+</style>
+<ion-view ng-controller="MapController" ng-init="showQuickSearch()">
+	<ion-content class="has-header">
+	    <div class="distance-info" style="top: 5px;">within {{searchWithIn/1000}} KM</div>
+            <div id="map" data-tap-disabled="true"></div>
+        </ion-content>
+</ion-view>
+

@@ -1,0 +1,21 @@
+<ion-view ng-controller="MapController" title="Find Near You">
+	<ion-header>
+		<h1 class="title">Find Near You</h1>
+	</ion-header>
+	<ion-content class="has-header">
+	  <div class="list">
+		  <label class="item item-input item-select">
+		    <div class="input-label">
+		      Search WithIn
+		    </div>
+		    <select ng-change="updateNearByDistanceSelection(nearByDistanceValue)" ng-model="nearByDistanceValue">
+		      <option value="1000" selected>1KM</option>
+		      <option value="5000">5KM</option>
+		      <option value="10000">10KM</option>
+		      <option value="20000">20KM</option>
+		    </select>
+		  </label>
+	</div>
+        </ion-content>
+</ion-view>
+
