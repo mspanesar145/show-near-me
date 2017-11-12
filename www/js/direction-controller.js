@@ -21,7 +21,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay,endPositi
 
 var currentMap = null;
 
-app.controller('DirectionController', function($scope,$rootScope,$location,$ionicHistory, $cordovaGeolocation,$ionicLoading, $http,$stateParams,MapService) {
+app.controller('DirectionController', function($scope,$rootScope,$location,$ionicHistory, $ionicPlatform,$cordovaGeolocation,$ionicLoading, $http,$stateParams,MapService) {
 
   $scope.goBack = function() {
       $ionicHistory.goBack();

@@ -35,7 +35,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
           bannerAtBottom: true, // set to true, to put banner at top
           overlap: false, // set to true, to allow banner overlap webview
           offsetTopBar: false, // set to true to avoid ios7 status bar overlap
-          isTesting: true, // receiving test ad
+          isTesting: false, // receiving test ad
           autoShow: true // auto show interstitial ad when loaded
     });
     window.plugins.AdMob.createBannerView();
